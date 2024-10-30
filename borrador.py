@@ -79,7 +79,7 @@ class RandomApp:
 
     def get_weather(self):
         try:
-            api_key = "TU_API_KEY"  # Reemplaza con tu API key de OpenWeatherMap
+            api_key = "8aa90031f4073ef8a1f233dd279c05d4"  # Reemplaza con tu API key de OpenWeatherMap
             response = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q=La%20Plata,AR&appid={api_key}&units=metric&lang=es")
             response.raise_for_status()
             data = response.json()
